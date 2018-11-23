@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/buho2"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/mifecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fecha"/>
+
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:theme="@style/CalenderViewCustom"
+        android:dateTextAppearance="@style/CalenderViewDateCustomText"
+        android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"
+        android:layout_marginTop="155dp"/>
+
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <at.markushi.ui.CircleButton
+            android:layout_marginStart="130dp"
+            android:id="@+id/btn_agregar"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            app:cb_color="#f96"
+            app:cb_pressedRingWidth="12dp"
+            android:src="@drawable/ic_add_black_24dp"/>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</LinearLayout>
